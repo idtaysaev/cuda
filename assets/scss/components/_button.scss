@@ -1,0 +1,44 @@
+.btn,
+button {
+  position: relative;
+	display: inline-block;
+	vertical-align: top;
+  text-align: center;
+  box-shadow: none;
+	cursor: pointer;
+	background-color: $color7;
+	color: white;
+	border-radius: $border-radius;
+	text-transform: uppercase;
+	box-shadow: 0 0 1em $color-shadow;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	transition: all 0.3s;
+	padding: 1em 2em;
+	@include respond-to(x-small) {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+
+	// button styles
+
+  &:hover,
+  &:focus {
+		color: white;
+		outline: none;
+		border-bottom-color: $color-semi-transparent;
+	}
+	&:active {
+		opacity: 0.8;
+		box-shadow: 0 0 2px $color-shadow;
+		border-bottom-color: transparent;
+	}
+  &[type=submit] {
+    // submit styles
+  }
+  &:disabled,
+  &.disabled {
+		// disabled styles
+		pointer-events: none;
+  }
+}

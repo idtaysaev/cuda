@@ -1,0 +1,24 @@
+// .page-enter-active,
+// .page-leave-active {
+//   transition: opacity 0.5s;
+// }
+
+// .page-enter,
+// .page-leave-active {
+//   opacity: 0;
+// }
+
+// .layout-enter-active,
+// .layout-leave-active {
+// 	transition: opacity 0.5s;
+// }
+
+// .layout-enter,
+// .layout-leave-active {
+// 	opacity: 0;
+// }
+
+.v-enter-to,
+.v-enter-active {
+	animation: fadeIn 1s ease-in-out both, slideUp 1s ease-in-out both;
+}

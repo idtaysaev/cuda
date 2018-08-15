@@ -1,0 +1,75 @@
+form {
+	text-align: center;
+}
+
+.form-block {
+	&+.form-block,
+	&+.form-block-double {
+		margin-top: 2em;
+	}
+}
+
+.form-block-double {
+	@include respond-to(small) {
+		display: flex;
+		.form-block {
+			width: 50%;
+			margin: 0;
+		}
+		.form-block:first-child {
+			margin-right: 2em;
+		}
+	}
+	&+.form-block-double,
+	&+.form-block {
+		margin-top: 2em;
+	}
+}
+
+input,
+textarea,
+select {
+	padding: 1em;
+	@include respond-to(small) {
+		padding: 1em 2em;
+	}
+	width: 100%;
+	background-color: $color-semi-transparent;
+	border: 0.2em solid transparent;
+	border-radius: $border-radius;
+	transition: border-color 0.3s;
+  &:disabled,
+  &:read-only {
+    // disabled, read-only styles
+    pointer-events: none;
+  }
+	&:focus {
+		border-color: $color2;
+	}
+}
+
+textarea {
+	min-height: 200px;
+	max-height: 400px;
+	resize: vertical;
+}
+
+input[type=radio] {
+	display: none;
+	&+label {
+		background-color: $color-semi-transparent;
+		color: white;
+		padding: 0.6em;
+		@include respond-to(x-small) {
+			padding: 0.6em 1.2em;
+		}
+		cursor: pointer;
+		transition: all 0.3s;
+		border-radius: $border-radius;
+		display: block;
+	}
+	&:checked+label {
+		background-color: white;
+		color: black;
+	}
+}
