@@ -3,7 +3,7 @@
 		href="#banner"
 		class="logo">
 		<img
-			src="/img/logo.png"
+			src="~assets/img/logo.png"
 			alt="Cuda">
 	</a>
 </template>
