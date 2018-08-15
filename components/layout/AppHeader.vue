@@ -17,40 +17,6 @@ export default {
 	components: {
 		Logo,
 		AppMenu
-	},
-	data() {
-		return {
-			links: [
-				{
-					label: "Home",
-					link: "banner"
-				},
-				{
-					label: "Services",
-					link: "services"
-				},
-				{
-					label: "Team",
-					link: "team"
-				},
-				{
-					label: "Skills",
-					link: "skills"
-				},
-				{
-					label: "Works",
-					link: "portfolio"
-				},
-				{
-					label: "About",
-					link: "about"
-				},
-				{
-					label: "Contact",
-					link: "contact"
-				},
-			]
-		}
 	}
 }
 </script>
