@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === "GH_PAGES" ? {
+	router: {
+		base: "/cuda/"
+	}
+} : {}
+
 module.exports = {
 	head: {
 		title: "cuda",
@@ -40,8 +46,6 @@ module.exports = {
 			}
 		}
 	},
-	router: {
-		base: "/cuda/"
-	}
+	...routerBase
 }
 
