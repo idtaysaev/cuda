@@ -39,6 +39,9 @@ module.exports = {
 				})
 			}
 		}
+	},
+	router: {
+		base: "/cuda/"
 	}
 }
 
