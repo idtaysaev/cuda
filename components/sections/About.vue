@@ -60,7 +60,7 @@ export default {
 					body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi facere ut qui dicta quidem quo distinctio consectetur."
 				},
 				{
-					img: require("~/assets/img/testimonials/emma.jpeg"),
+					img: require("~/assets/img/testimonials/emma.jpg"),
 					name: "Emma Stone",
 					position: "Co-Founder of Shazam",
 					body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi facere ut qui dicta quidem quo distinctio consectetur."
