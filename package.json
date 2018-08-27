@@ -1,8 +1,12 @@
 {
   "name": "cuda",
   "version": "1.0.0",
-  "description": "Cuda | building awesome websites and mobile apps",
-  "author": "idtaysaev <taysaevid@gmail.com>",
+	"description": "Portfolio | Cuda",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/idtaysaev/cuda.git"
+	},
+  "author": "idtaysaev <idtaysaev@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
