@@ -12,7 +12,7 @@ module.exports = {
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
 			{ hid: "description", name: "description", content: "Cuda | building awesome websites and mobile apps" },
 			{ hid: "author", name: "author", content: "Idar Taysaev" },
-			{ hid: "theme-color", name: "theme-color", content: "#3B8070" }
+			{ hid: "theme-color", name: "theme-color", content: "#87509c" }
 		],
 		link: [
 			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -20,7 +20,7 @@ module.exports = {
 			{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,500,700" },
 		]
 	},
-	loading: { color: "#3B8070", failedColor: "#cc2936" },
+	loading: { color: "#87509c", failedColor: "#cc2936" },
 	modules: [
 		"@nuxtjs/pwa",
 		"nuxt-sass-resources-loader"
