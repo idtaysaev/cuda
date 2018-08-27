@@ -5,7 +5,10 @@ form {
 .form-block {
 	&+.form-block,
 	&+.form-block-double {
-		margin-top: 2em;
+		margin-top: 1em;
+		@include respond-to(small) {
+			margin-top: 2em;
+		}
 	}
 }
 
@@ -17,12 +20,18 @@ form {
 			margin: 0;
 		}
 		.form-block:first-child {
-			margin-right: 2em;
+			margin-right: 1em;
+			@include respond-to(small) {
+				margin-right: 2em;
+			}
 		}
 	}
 	&+.form-block-double,
 	&+.form-block {
-		margin-top: 2em;
+		margin-top: 1em;
+		@include respond-to(small) {
+			margin-top: 2em;
+		}
 	}
 }
 
